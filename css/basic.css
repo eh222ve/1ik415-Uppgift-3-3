@@ -1,1 +1,136 @@
 /* Denna fil får du editera för att lösa uppgiften. Du får INTE ändra i html-filen. */
+body{
+    background-color: #fcfaf4;
+    padding: 20px;
+    padding-top: 10px;
+    font-family: Helvetica;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Times New Roman";
+    color: #797066;
+}
+h2{
+    font-size: 1.2em;
+}
+p{
+
+    color: #797066;
+}
+
+/*********************************
+        Container
+*********************************/
+
+#container{
+
+    border: 2px solid #cecab9;
+}
+
+/*********************************
+        TopBar
+*********************************/
+#topbar, #menu{
+    background-color: #51473d;
+}
+
+#topbar{
+    color: #fcfaf4;
+    font-style: italic;
+    text-align: right;
+}
+
+#topbar:after{
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    overflow: auto;
+    background-image: url("pics/coffey.jpg");
+}
+/*********************************
+        Menu
+*********************************/
+#menu a{
+    display: none;
+}
+#menu ul{
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+    list-style-type: none;
+    padding-top: 20px;
+}
+#menu li{
+    display: inline;
+}
+#menu li a{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #797066;
+    color: #eae7d2;
+    text-decoration: none;
+}
+#menu li a:hover{
+    background-color: #9c9084;
+}
+
+#menu li.active a{
+    background-color: #eae7d2;
+    color: #797066;
+}
+#menu li a:first-letter {
+    text-transform: uppercase;
+}
+
+/*********************************
+        Content
+*********************************/
+#content{
+    background-color: #eae7d2;
+    margin: 0;
+    padding: 10px;
+    overflow: auto;
+}
+
+#maincontent{
+    width: 60%;
+    float: left;
+    overflow: auto;
+}
+
+#maincontent img{
+    margin: 10px;
+    float: left;
+}
+
+#subcontent{
+    width: 35%;
+    padding: 2.4%;
+    float: left;
+    overflow: auto;
+    border-left: #797066 1px dashed;
+}
+
+#subcontent ul{
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+}
+
+#subcontent ul li a{
+    color: #797066;
+    font-size: 1em;
+
+}
+
+/*********************************
+        BottomContent
+*********************************/
+#bottomcontent{
+    font-style: italic;
+    font-size: small;
+    color: #797066;
+}
+
